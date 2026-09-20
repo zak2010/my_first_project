@@ -3,13 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome - Zakhid</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="demo" onclick="onClickFunc()">Hello world!</h1>
-    <p>My name is Zakhid.</p>
-    <p>My friend is Asad.</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Zakhid</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 id="demo" onclick="onClickFunc()">Welcome to My World</h1>
+            <p class="subtitle">Let's connect and create something amazing</p>
+            <button class="cta-button" onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>Hi, I'm Zakhid</h3>
+                    <p>Passionate about creating beautiful and functional web experiences.</p>
+                </div>
+                <div class="about-card">
+                    <h3>My Friend Asad</h3>
+                    <p>Amazing collaborator and creative thinker who loves building great things.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+            <button class="contact-button" onclick="showMessage()">Get In Touch</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Zakhid & Asad. Built with ❤️</p>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
